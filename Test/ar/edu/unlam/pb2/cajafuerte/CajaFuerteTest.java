@@ -25,6 +25,29 @@ public class CajaFuerteTest {
 		entoncesLaCajaFuerteEstaCerrada(caja);
 
 	}
+//nro3
+	@Test 
+	public void alAbrirLaCajaFuerteConElCodigoDeCierreDeberiaAbrirse() {
+		//preparación 
+		Integer codigoDeApertura=1234;
+		CajaFuerte caja= dadoQueExisteUnaCajaFuerte();
+		
+		dadoQueCierroLaCajaFuerte(caja, codigoDeApertura);
+		
+		//ejecución
+		cuandoAbroLaCajaFuerte(caja, codigoDeApertura);
+		
+		//contrastacion
+		entonceslaCajaFuerteEstaAbierta(caja);
+		
+	}
+	
+	
+	
+	private void entonceslaCajaFuerteEstaAbierta(CajaFuerte caja) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	// nro1
 	// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
